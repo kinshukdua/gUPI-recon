@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>351</width>
+    <height>543</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>351</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0" colspan="2">
+     <widget class="QLineEdit" name="phoneEdit"/>
+    </item>
+    <item row="17" column="0" rowspan="2">
+     <widget class="QLineEdit" name="nameEdit"/>
+    </item>
+    <item row="17" column="2">
+     <widget class="QPushButton" name="Query">
+      <property name="text">
+       <string>Query</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0">
+     <widget class="QRadioButton" name="razorpayUPI">
+      <property name="text">
+       <string>Use RazorPay (Requires API Key)</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">APIGroup</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QRadioButton" name="upibankAPI">
+      <property name="text">
+       <string>Use UPIBankValidator</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">APIGroup</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Email Address</string>
+      </property>
+     </widget>
+    </item>
+    <item row="22" column="0" colspan="3">
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="2">
+     <widget class="QPushButton" name="pasteEmail">
+      <property name="text">
+       <string>Paste</string>
+      </property>
+     </widget>
+    </item>
+    <item row="20" column="0">
+     <widget class="QProgressBar" name="progressBar">
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="0">
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Name:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Phone No.</string>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="2">
+     <widget class="QRadioButton" name="allUPI">
+      <property name="text">
+       <string>All UPI</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">UPIGroup</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="6" column="0" colspan="2">
+     <widget class="QLineEdit" name="emailEdit"/>
+    </item>
+    <item row="8" column="2">
+     <widget class="QRadioButton" name="mobileUPI">
+      <property name="text">
+       <string>Mobile UPI</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">UPIGroup</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="11" column="2">
+     <widget class="QRadioButton" name="gpayUPI">
+      <property name="text">
+       <string>Gpay UPI</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">UPIGroup</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="20" column="2">
+     <widget class="QPushButton" name="saveButton">
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+    </item>
+    <item row="19" column="0" colspan="3">
+     <widget class="QTableWidget" name="Result">
+      <property name="minimumSize">
+       <size>
+        <width>321</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="pastePhone">
+      <property name="text">
+       <string>Paste</string>
+      </property>
+     </widget>
+    </item>
+    <item row="24" column="0">
+     <widget class="QLabel" name="footer">
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Search Query</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="2">
+     <widget class="QRadioButton" name="fastagUPI">
+      <property name="text">
+       <string>Fastag UPI</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">UPIGroup</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="12" column="0">
+     <widget class="QRadioButton" name="customAPI">
+      <property name="text">
+       <string>Use Custom API</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">APIGroup</string>
+      </attribute>
+     </widget>
+    </item>
+   </layout>
+   <zorder>label</zorder>
+   <zorder>phoneEdit</zorder>
+   <zorder>saveButton</zorder>
+   <zorder>label_2</zorder>
+   <zorder>emailEdit</zorder>
+   <zorder>Query</zorder>
+   <zorder>label_4</zorder>
+   <zorder>pastePhone</zorder>
+   <zorder>pasteEmail</zorder>
+   <zorder>line</zorder>
+   <zorder>footer</zorder>
+   <zorder>Result</zorder>
+   <zorder>nameEdit</zorder>
+   <zorder>progressBar</zorder>
+   <zorder>mobileUPI</zorder>
+   <zorder>gpayUPI</zorder>
+   <zorder>fastagUPI</zorder>
+   <zorder>allUPI</zorder>
+   <zorder>upibankAPI</zorder>
+   <zorder>razorpayUPI</zorder>
+   <zorder>customAPI</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>351</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Open">
+    <property name="title">
+     <string>&amp;API Key</string>
+    </property>
+    <widget class="QMenu" name="menu_Add_API_2">
+     <property name="title">
+      <string>&amp;Add API Key</string>
+     </property>
+     <addaction name="action_Manually"/>
+     <addaction name="action_From_File"/>
+    </widget>
+    <addaction name="menu_Add_API_2"/>
+    <addaction name="action_Add_API_URL"/>
+   </widget>
+   <widget class="QMenu" name="menu_Query">
+    <property name="title">
+     <string>&amp;Query</string>
+    </property>
+    <addaction name="action_New_Query"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave_Query_Results"/>
+   </widget>
+   <widget class="QMenu" name="menu_About">
+    <property name="title">
+     <string>&amp;About</string>
+    </property>
+   </widget>
+   <addaction name="menu_Open"/>
+   <addaction name="menu_Query"/>
+   <addaction name="menu_About"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionManually">
+   <property name="text">
+    <string>Manually</string>
+   </property>
+  </action>
+  <action name="action_Manually">
+   <property name="text">
+    <string>&amp;Manually</string>
+   </property>
+  </action>
+  <action name="action_From_File">
+   <property name="text">
+    <string>&amp;From File</string>
+   </property>
+  </action>
+  <action name="action_New_Query">
+   <property name="text">
+    <string>&amp;New Query</string>
+   </property>
+  </action>
+  <action name="actionSave_Query_Results">
+   <property name="text">
+    <string>Save Query Results</string>
+   </property>
+  </action>
+  <action name="action_Add_API_URL">
+   <property name="text">
+    <string>&amp; Add API URL</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="UPIGroup"/>
+  <buttongroup name="APIGroup"/>
+ </buttongroups>
+</ui>

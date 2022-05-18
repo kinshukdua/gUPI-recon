@@ -66,9 +66,7 @@ class Scraper(QObject):
                     #  sorry for the inconvenience
                     executor._threads.clear()
                     concurrent.futures.thread._threads_queues.clear()
-        if self.found > 0:
-            win.set_footer("Found: "+ str(self.found+1), "green")
-        else:
+        if self.found == 0:
             win.set_footer("No VPA found for: "+searchtext, "red")
         
     def address_discovery(self, vpa, api_url):
@@ -82,6 +80,7 @@ class Scraper(QObject):
             win.Result.setItem(rowPosition , 1, QTableWidgetItem(vpa))
             win.nameEdit.setText(r.json()['name'])    
             self.found += 1
+            win.set_footer("Found: "+ str(self.found), "green")
         if r.status_code == 400:
             win.set_footer("Bad Request", "red")
         if r.status_code == 429:
@@ -187,6 +186,8 @@ class Window(QMainWindow, Ui_MainWindow):
             self.suffix = fastag_suffix_dict
         elif (win.mobileUPI.isChecked()):
             self.suffix = mobile_suffix_dict
+        self.Result.clearContents()
+        self.Result.setRowCount(0)
         self.thread.start()
 
 class add_API(QDialog):

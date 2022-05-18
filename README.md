@@ -104,15 +104,15 @@ This project is a GUI port of upi-recon by @squeal.<br />
 ## Usage
 * STEP 1: Enter the mobile number or gmail address or vehicle registration number
      
-[![Step 1][usage-1]]
+[![Step 1][usage-1]]()
     
 * STEP 2: Select the API to use and the UPI to Query
     
-[![Step 2][usage-2]]
+[![Step 2][usage-2]]()
    
 * STEP 3: Click on the Query button
       
-[![Step 3][usage-3]]
+[![Step 3][usage-3]]()
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>

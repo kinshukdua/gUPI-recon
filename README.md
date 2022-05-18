@@ -198,5 +198,5 @@ This tool is provided "AS IS" without any warranty of any kind, either expressed
 [linkedin-url]: https://linkedin.com/in/dua
 [product-screenshot]: screenshots/screenshot.png
 [usage-1]: screenshots/usage1.png
-[usage-2]: screenshots/usage2.png
-[usage-3]: screenshots/usage3.png
+[usage-2]: screenshots/usage2.PNG
+[usage-3]: screenshots/usage3.PNG

@@ -1,0 +1,24 @@
+[build-system]
+requires = ['flit_core >=3.2,<4', 'setuptools']
+build-backend = 'flit_core.buildapi'
+
+[project]
+name = 'gupi_recon'
+authors = [
+    {name = 'Kinshuk Dua'},
+    {name = 'Aswin Murali'},
+]
+readme = 'README.md'
+dynamic = ['version', 'description']
+requires-python = '>=3.7'
+classifiers = [
+    'Programming Language :: Python :: 3',
+]
+dependencies = [
+    'pyperclip>=1.8.2',
+    'PyQt5>=5.15.6',
+    'requests>=2.27.1',
+]
+
+[project.urls]
+Home = 'https://github.com/kinshukdua/gUPI-recon'
